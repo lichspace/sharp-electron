@@ -1588,7 +1588,7 @@ var require_package = __commonJS({
         bundle: "esbuild lib/index.js --platform=node --watch --bundle --outfile=bundle/index.js"
       },
       type: "commonjs",
-      main: "lib/bundle/index.js",
+      main: "bundle/index.js",
       types: "lib/index.d.ts",
       files: [
         "install",
