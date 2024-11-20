@@ -1907,8 +1907,8 @@ var require_sharp = __commonJS({
     var { runtimePlatformArch, isUnsupportedNodeRuntime, prebuiltPlatforms, minimumLibvipsVersion } = require_libvips();
     var runtimePlatform = runtimePlatformArch();
     var paths = [
-      path.resolve(__dirname, `@img/sharp-${runtimePlatform}/lib/sharp-${runtimePlatform}.node`),
-      `${process.env.resourcesPath}/@img/sharp-${runtimePlatform}/lib/sharp-${runtimePlatform}.node`,
+      path.resolve(__dirname, `/sharp-${runtimePlatform}/lib/sharp-${runtimePlatform}.node`),
+      `${process.env.resourcesPath}/sharp-${runtimePlatform}/lib/sharp-${runtimePlatform}.node`,
       `../src/build/Release/sharp-${runtimePlatform}.node`,
       "../src/build/Release/sharp-wasm32.node",
       `@img/sharp-${runtimePlatform}/sharp.node`,
