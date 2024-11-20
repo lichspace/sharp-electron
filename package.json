@@ -104,10 +104,11 @@
     "package-from-github-release": "node npm/from-github-release",
     "docs-build": "node docs/build && node docs/search-index/build",
     "docs-serve": "cd docs && npx serve",
-    "docs-publish": "cd docs && npx firebase-tools deploy --project pixelplumbing --only hosting:pixelplumbing-sharp"
+    "docs-publish": "cd docs && npx firebase-tools deploy --project pixelplumbing --only hosting:pixelplumbing-sharp",
+    "bundle": "esbuild lib/index.js --platform=node --watch --bundle --outfile=bundle/index.js"
   },
   "type": "commonjs",
-  "main": "lib/index.js",
+  "main": "lib/bundle/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "install",
@@ -172,6 +173,7 @@
     "@types/node": "*",
     "cc": "^3.0.1",
     "emnapi": "^1.2.0",
+    "esbuild": "0.24.0",
     "exif-reader": "^2.0.1",
     "extract-zip": "^2.0.1",
     "icc": "^3.0.0",
